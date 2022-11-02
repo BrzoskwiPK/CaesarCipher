@@ -1,0 +1,16 @@
+.CipherKey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CipherKey p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.CipherKey input {
+    width: 100px;
+    height: 25px;
+}

@@ -1,0 +1,11 @@
+.EncryptContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EncryptContainer__input {
+    width: 260px;
+    height: 120px;
+    padding: 10px;
+}

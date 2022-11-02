@@ -1,0 +1,55 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gridContainer {
+  width: 100%;
+  height: 85vh;
+  display: grid;
+  background: #E0F4FF;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "EncryptContainer EncryptContainer Encrypt Encrypt"
+    "ResultContainer ResultContainer Decrypt Decrypt"
+    "Dummy Dummy Key Key";
+}
+
+.EncryptContainer { grid-area: EncryptContainer; }
+.ResultContainer { grid-area: ResultContainer; }
+.Key { grid-area: Key; }
+.Decrypt { grid-area: Decrypt; }
+.Encrypt { grid-area: Encrypt; }
+.Dummy { grid-area: Dummy; }
+
+.Encrypt, .Decrypt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Encrypt button, .Decrypt button {
+  width: 120px;
+  height: 50px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.Encrypt button:hover, .Decrypt button:hover {
+  background: #FEFAE0;
+  cursor: pointer;
+}
